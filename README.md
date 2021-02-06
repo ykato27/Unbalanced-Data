@@ -5,26 +5,27 @@
 ```
 .
 ├── README.md                 READMEファイル
+├── .dockerignore        
 ├── Dockerfile                Dockerファイル
+├── docker-compose.yml
 ├── notebook                  jupyter notebook
 └── data                      dataファイル
 ```
 
 ## 環境構築
-Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Unbalanced_Data）
+
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Unbalanced_Data）
 ```
 cd Desktop/Unbalanced_Data
 ```
-Dockerによる環境構築
+
+* Dockerによる環境構築（フォルダをマウント：Desktop/Unbalanced_Data）
 ```
-docker build .
+docker-compose up --build
 ```
-docker run実行（対象フォルダをマウントする／例：Desktop/Unbalanced_Data）
-```
-docker run -p 8888:8888 -v ~/Desktop/Unbalanced_Data/:/work --name Unbalanced_Data <docker image>
-```
-ブラウザーを立ち上げてlocalhost:8888へアクセス
-workフォルダ内が対象フォルダにマウントされている
+
+* ブラウザーを立ち上げてlocalhost:8888へアクセス
+* ローカルフォルダがマウントされている
 
 ## jupyter notebook説明
 * Unbalanced_Data.ipynb : 不均衡データの処置のnotebook
