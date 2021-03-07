@@ -1,4 +1,4 @@
-# Unbalanced_Data
+# Unbalanced-Data
 * 不均衡データの処置プログラム
 
 ## リポジトリ構成
@@ -14,9 +14,9 @@
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Unbalanced_Data）
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Unbalanced-Data）
 ```
-cd Desktop/Unbalanced_Data
+cd Desktop/Unbalanced-Data
 ```
 
 * Dockerによる環境構築（フォルダをマウント：Desktop/Unbalanced_Data）
