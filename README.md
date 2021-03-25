@@ -21,7 +21,7 @@ cd Desktop/Unbalanced-Data
 
 * Dockerによる環境構築（フォルダをマウント：Desktop/Unbalanced_Data）
 ```
-docker-compose up --build
+docker-compose up
 ```
 
 * ブラウザーを立ち上げてlocalhost:8888へアクセス
