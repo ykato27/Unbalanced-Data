@@ -4,12 +4,22 @@
 ## リポジトリ構成
 ```
 .
-├── README.md                 READMEファイル
-├── .dockerignore        
-├── Dockerfile                Dockerファイル
+├── Dockerfile
+├── README.md
+├── data
 ├── docker-compose.yml
-├── notebook                  jupyter notebook
-└── data                      dataファイル
+├── docs
+├── models
+├── notebooks
+│   ├── Unbalanced_Data.ipynb
+│   └── imbalanced_data.ipynb
+├── pyproject.toml
+├── setup.cfg
+├── src
+│   └── __init__.py
+├── tests
+│   └── __init__.py
+└── work
 ```
 
 ## 環境構築
